@@ -1,0 +1,23 @@
+.logo {
+    font-family: $fontSecondary;
+    color: $logo-heder;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    transition: color 250ms $cubik;
+    &::before {
+            content: 'Web';
+            color: $btn-and-accent;
+        }
+    &:hover,
+    &:focus
+         {
+            color: $btn-and-accent;
+                    }
+}
+
+.footer__logo {
+    display: block;
+    color: $main-bg;
+    margin-bottom: 20px;
+}

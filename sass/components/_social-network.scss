@@ -1,0 +1,32 @@
+.social-network {
+    padding: 0 32px;
+    margin-top: 16px;
+    @include flexCenter();
+}
+
+.social-network__item {
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.social-network__link {
+    @include flexCenter();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: $main-bg;
+    color: $icon-color;
+    transition: color 250ms $cubik, background-color 250ms $cubik;
+
+    &:hover,
+    &:focus {
+        color: $main-bg;
+        background-color: $btn-and-accent;
+    }
+}
+
+.social-network__icon {
+    fill: currentColor;
+}

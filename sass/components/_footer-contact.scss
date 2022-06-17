@@ -1,0 +1,33 @@
+.adres__card {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.adres__item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+        }
+}
+
+.adres {
+    font-style: normal;
+    display: block;
+    width: 231px;
+}
+
+.adres__link {
+    color: $footer-contact;
+    text-decoration: none;
+    transition: color 250ms $cubik;
+
+    &:focus,
+    &:hover {
+        color: $btn-and-accent;
+ }
+}
+
+.adres__text {
+    color: $main-bg;
+}
