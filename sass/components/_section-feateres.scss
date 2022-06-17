@@ -1,13 +1,17 @@
 .feateres__cart{
-    @extend %section-flex;
+    display: block;
+
+    // @extend %section-flex;
 }
 
 .feateres__item {
-    width: calc((100% - 90px) / 4);
 
-    &:not(:first-child) {
-        margin-left: 30px;
-    }
+
+    // width: calc((100% - 90px) / 4);
+
+    // &:not(:first-child) {
+    //     margin-left: 30px;
+    // }
 }
 
 .feateres__icon {
@@ -20,10 +24,11 @@
 }
 
 .feateres__title {
-    color: $h-color-text;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
+    text-align: center;
     text-transform: uppercase;
+    color: $h-color-text;
     margin-bottom: 10px;
 }

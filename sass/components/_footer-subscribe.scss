@@ -1,21 +1,24 @@
 .subscribe {
-    margin-left: 94px;
+
+    // margin-left: 94px;
     margin-top: 12px;
 }
 
 .subscribe__btn {
+   
     @include flexCenter();
     margin-left: 12px;
 }
 
 .subscribe__form {
-    display: flex;
     position: relative;
 }
 
 .subscribe__input {
+    display: block;
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
+    // width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color:$second-bg;

@@ -2,8 +2,12 @@
     font-family: $fontSecondary;
     color: $logo-heder;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
+
+
+
+    // font-size: 26px;
     transition: color 250ms $cubik;
     &::before {
             content: 'Web';
@@ -19,5 +23,7 @@
 .footer__logo {
     display: block;
     color: $main-bg;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+
+    // margin-bottom: 20px;
 }

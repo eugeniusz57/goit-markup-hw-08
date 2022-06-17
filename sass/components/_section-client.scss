@@ -2,12 +2,16 @@
     @extend %section-flex;
     text-align: center;
         padding: 0;
-        margin: 0 -15px;
+        margin: -15px;
+    flex-wrap: wrap;
      }
 
 .clients__item {
-    width: calc((100% - 180px) / 6);
-    margin: 0 15px;
+    width: calc((100% - 60px) / 2);
+        margin: 15px;
+   
+        // width: calc((100% - 180px) / 6);
+    // margin: 0 15px;
 }
 
 
