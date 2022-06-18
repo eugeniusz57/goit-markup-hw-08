@@ -127,6 +127,8 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
+  padding-top: 16px;
+  padding-bottom: 16px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -143,7 +145,7 @@ img {
 .footer__logo {
   display: block;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .site-nav {
@@ -238,6 +240,8 @@ img {
   background-color: #c4c4c4;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-mobile-x1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile-x1.jpg);
 }
 
 .hero__title {
@@ -260,9 +264,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 94px 15px 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 99;
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -272,28 +278,42 @@ img {
   pointer-events: none;
 }
 
+@media screen and (min-width: 481px) {
+  .backdrop {
+    padding: 15px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  border-radius: 4px;
-  background-color: #fff;
+  position: relative;
   padding: 40px;
+  max-width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
+  background-color: #fff;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 481px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    width: calc(100% - 30px);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .btn-close {
@@ -345,7 +365,7 @@ img {
   color: #000;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   margin-bottom: 12px;
 }
 
@@ -425,13 +445,15 @@ img {
 
 .checkbox__label {
   display: inline-block;
-  padding-left: 32px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 .checkbox__icon-checked {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: inline-block;
@@ -672,22 +694,19 @@ img {
 }
 
 .adres__card {
+  display: inline-block;
   list-style-type: none;
   padding-left: 0px;
 }
 
-.adres__item {
-  display: block;
-}
-
 .adres__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adres {
   font-style: normal;
   display: block;
-  width: 231px;
+  margin: 0 auto;
 }
 
 .adres__link {
@@ -711,6 +730,8 @@ img {
 
 .social-adres {
   margin-top: 12px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .social-network--pdl-null {
@@ -719,6 +740,7 @@ img {
 }
 
 .social-adres__label {
+  font-weight: 700;
   color: #fff;
   line-height: 1.13;
   text-transform: uppercase;
@@ -733,10 +755,6 @@ img {
   fill: #fff;
 }
 
-.subscribe {
-  margin-top: 12px;
-}
-
 .subscribe__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,7 +765,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
+  margin: 0 auto;
 }
 
 .subscribe__form {
@@ -764,6 +782,7 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 16px;
   line-height: 1.25;
@@ -780,10 +799,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   color: #757575;
-  top: 50%;
+  top: 0;
   left: 16px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
   -webkit-transition: -webkit-transform 250ms linear;
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
@@ -792,8 +811,8 @@ img {
 
 .subscribe__input:focus + .subscribe__label,
 .subscribe__input:not(:placeholder-shown) + .subscribe__label {
-  -webkit-transform: translate(-70px, -50%);
-          transform: translate(-70px, -50%);
+  -webkit-transform: translate(0px, -110%);
+          transform: translate(0px, -110%);
 }
 
 .subscribe__icon {
@@ -801,6 +820,7 @@ img {
 }
 
 .subscribe__text {
+  font-weight: 700;
   color: #fff;
   line-height: 1.13;
   text-transform: uppercase;
@@ -808,10 +828,10 @@ img {
 }
 
 .filtr__card {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -7.5px -4px;
 }
 
 .btn-portfolio {
@@ -848,22 +868,13 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filtr__item:not(:first-child) {
-  margin-left: 8px;
-}
-
-.prt-work {
-  margin: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.filtr__item {
+  margin: 7.5px 4px;
 }
 
 .prt-work__item {
-  width: calc((100% - 6 * 15px) / 3);
-  margin: 15px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .text-contein {

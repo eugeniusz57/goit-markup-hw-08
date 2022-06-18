@@ -1,20 +1,28 @@
 .adres__card {
+    display: inline-block;
     list-style-type: none;
     padding-left: 0px;
+    
 }
 
 .adres__item {
-    display: block;
-
+    
     &:not(:last-child) {
-        margin-bottom: 9px;
+            margin-bottom: 8px;
         }
+    
+
+    // &:not(:last-child) {
+    //     margin-bottom: 9px;
+    //     }
 }
 
 .adres {
     font-style: normal;
     display: block;
-    width: 231px;
+    margin: 0 auto;
+
+    // width: 231px;
 }
 
 .adres__link {
