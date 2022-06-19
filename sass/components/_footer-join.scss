@@ -1,6 +1,6 @@
 .footer-social {
     display: block;
-
+   
     // display: flex;
     // justify-content: center;
 }
@@ -9,6 +9,9 @@
     margin-top: 12px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+padding: 0;
+    }
     // margin-left: 70px;
 }
 

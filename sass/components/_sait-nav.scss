@@ -1,18 +1,20 @@
 .site-nav {
-    display: none;
-    // margin-left: 93px;
-    // list-style-type: none;
-    // display: flex;
-    // padding-left: 0px;
-    // padding-right: 0px;
+    @media screen and (min-width: 768px) {
+
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;}
+
+    
 }
 
 .site-nav__item {
     display: flex;
 
     &:not(:first-child) {
-            margin-left: 50px;
-        }
+        margin-left: 50px;
+    }
 }
 
 .site-nav__link {
@@ -26,6 +28,7 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     transition: color 250ms $cubik;
 
     
@@ -49,4 +52,18 @@
             background: $btn-and-accent;
         }
 
+}
+
+.page-heder__nav-contact{
+    display: none;
+    
+    @media screen and (min-width: 768px) {
+    margin-left: 88px;
+    display: flex;
+    align-items: center;
+      }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    }
 }

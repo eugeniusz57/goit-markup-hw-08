@@ -1,3 +1,9 @@
+.footer-adres{
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+
+}
 .adres__card {
     display: inline-block;
     list-style-type: none;

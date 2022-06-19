@@ -1,17 +1,22 @@
 .clients__card {
-    @extend %section-flex;
+    @extend %section;
     text-align: center;
-        padding: 0;
-        margin: -15px;
+    padding: 0;
+    margin: -15px;
+    display: flex;
     flex-wrap: wrap;
-     }
+}
 
 .clients__item {
     width: calc((100% - 60px) / 2);
         margin: 15px;
-   
-        // width: calc((100% - 180px) / 6);
-    // margin: 0 15px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: 1200px) { 
+        width: calc((100% - 180px) / 6);
+        margin: 0 15px;
+        }
 }
 
 

@@ -8,7 +8,8 @@
 }
 
 .prt-work__item {
-    width: 100%;
+    display: block;
+    max-width: 100%;
     // width: calc((100% - 6 * 15px) / 3);
     margin-bottom: 30px;
 }
@@ -50,6 +51,7 @@
 .project__text {
     font-size: 16px;
     line-height: 1.88;
+    color: $main-text-color;
 }
 
 .portfolio-link {
@@ -68,7 +70,11 @@
 .portfolio-img {
     position: relative;
     overflow: hidden;
-}
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    }
+
 
 .text-contein__hidden-text {
     font-size: 18px;

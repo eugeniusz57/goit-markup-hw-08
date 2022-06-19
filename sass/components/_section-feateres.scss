@@ -1,11 +1,21 @@
 .feateres__cart{
     display: block;
-
-    // @extend %section-flex;
+    @extend %section;
+    
+    @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;     
+    flex-wrap: wrap;
+        }
 }
 
-.feateres__item {
 
+.feateres__item {
+    @media screen and (min-width: 768px) {
+    
+    width: calc((100% - 4*15px) / 2);
+     margin: 15px;
+    }
 
     // width: calc((100% - 90px) / 4);
 

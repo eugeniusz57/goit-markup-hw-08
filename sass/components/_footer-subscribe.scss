@@ -13,7 +13,7 @@
 
 .subscribe__form {
     position: relative;
-    
+    text-align: center;
     
 }
 
@@ -32,6 +32,13 @@
     color: $main-bg;
     font-size: 16px;
     line-height: 1.25;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 }
 
 .subscribe__label {
@@ -49,6 +56,12 @@
     .subscribe__input:focus + &,
     .subscribe__input:not(:placeholder-shown)+& {
             transform: translate(0px, -110%);
+        }
+         @media screen and (min-width: 768px) {
+        left: 160px;
+         }
+        @media screen and (min-width: 1200px) {
+
         }
 }
 
