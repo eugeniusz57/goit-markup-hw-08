@@ -1,0 +1,34 @@
+.menu-burger{
+    color: $logo-heder;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+    transition: color 250ms $cubik;
+
+    &:hover,
+    &:focus {
+        color: $btn-and-accent;
+    }
+    .icon-menu,
+    .icon-close-burger{
+        fill: currentColor;
+    }
+
+
+    & .icon-close-burger{
+        display: none;
+    }
+
+    &.is-open .icon-menu{
+        display: none;
+    }
+    &.is-open .icon-close-burger{
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

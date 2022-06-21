@@ -1,9 +1,12 @@
 .work{
-    display: none;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 .work__list {
-    // @extend %section-flex;
-    // flex-wrap: wrap;
+    @extend %section;
+    display: flex;
+    flex-wrap: wrap;
 }
 .section--padding-null {
     padding-top: 0px;

@@ -1,9 +1,42 @@
 .page-header__container {
+    
     display: flex;
     align-items: center;
-
+    @media screen and (max-width: 767px) {
+        justify-content: space-between; 
+    }
+    
 }
 
 .page-header {
+    position: relative;
     border-bottom: 1px solid $heder-border;
+}
+
+.page-heder__nav-contact{
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+        &.is-open{
+        display: flex;
+        width: 100%;
+        z-index: 999;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        padding: 48px 40px;}
+}
+    
+    @media screen and (min-width: 768px) {
+    margin-left: 88px;
+   
+    align-items: center;
+    flex-grow: 1;
+      }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    }
 }

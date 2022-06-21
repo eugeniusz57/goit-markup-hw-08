@@ -1,8 +1,16 @@
 .contact {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding-bottom: 64px;
+        &__email,
+        &__tel {display: none;
+        }
+    }
 
     @media screen and (min-width: 768px) {
-        display: block;
+        
         margin-left: auto;
 
         &__email,
@@ -25,9 +33,17 @@
     &:not(:last-child){
         margin-bottom: 10px;
     }
-    @media screen and (min-width: 1200x) {
+    
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    
+    @media screen and (min-width: 1200px) {
     &:not(:last-child) {
-            margin-right: 50px;
+        margin-bottom: 0;    
+        margin-right: 30px;
         }
 
     }
@@ -36,24 +52,30 @@
 
 
 .contact__link {
-    @include flexCenter();
+    @include flexCenter(flex, start, center);
       
     color: $main-text-color;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    font-size: 12px;
+    @media screen and (max-width: 767px) {
+    font-size: 34px;
 
-    transition: color 250ms $cubik;
+    }
+     transition: color 250ms $cubik;
 
     &:hover, 
     &:focus{
         color: $btn-and-accent;
         fill: $btn-and-accent;
     }
-        @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         
         padding-top: 32px;
-        padding-bottom: 32px;}
+        padding-bottom: 32px;
+        justify-content: center;}
+        
+ 
     
 }

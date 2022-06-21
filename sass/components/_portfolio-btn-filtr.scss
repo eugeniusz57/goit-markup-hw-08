@@ -1,12 +1,19 @@
 .filtr__card{
-
-    @extend %section;
-    // justify-content: center;
+     @extend %section;
+    
+    display: flex;
+    @media screen and (max-width: 767px) {
     padding-bottom: 46px;
     flex-wrap: wrap;
-    margin: -7.5px -4px;
+    margin: -7.5px -4px;}
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+        justify-content: center;
+    }
 
-    // padding-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 50px;
+    }
 }
 
 .btn-portfolio {
@@ -42,8 +49,14 @@
             0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filtr__item{
+    @media screen and (max-width: 767px) {
     margin: 7.5px 4px;
+    }
+    &:not(:first-child) {
+        @media screen and (min-width: 768px) {
+                margin-left: 8px;
+        }
+    }
+
 }
-// .filtr__item:not(:first-child) {
-//     margin-left: 8px;
-// }
+

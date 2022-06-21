@@ -1,8 +1,10 @@
-.fotter-contsct-join{
+.fotter-contact-join{
 @media screen and (min-width: 768px) {
         @include flexCenter(flex, space-around, baseline);
         padding-top: 0;
         padding-bottom: 60px;
     }
+
+
 
 }
