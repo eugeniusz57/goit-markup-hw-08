@@ -173,6 +173,9 @@ img {
 @media screen and (min-width: 768px) {
   .page-heder__nav-contact {
     margin-left: 88px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1303,7 +1306,6 @@ img {
 }
 
 .prt-work__item {
-  display: block;
   max-width: 100%;
 }
 
@@ -1357,7 +1359,6 @@ img {
 }
 
 .project {
-  display: block;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1380,6 +1381,7 @@ img {
 
 .portfolio-link {
   display: block;
+  height: 100%;
   text-decoration: none;
   color: #212121;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
