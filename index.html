@@ -221,7 +221,34 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="images/Igor.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/webp/igor-270.webp    270w,
+                    ./images/webp/igor-354.webp    354w,
+                    ./images/webp/igor-450.webp    450w,
+                    ./images/webp/igor-270@2x.webp 540w,
+                    ./images/webp/igor-354@2x.webp 708w,
+                    ./images/webp/igor-450@2x.webp 900w
+                  "
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  type="image/webp"
+                />
+
+                <img
+                  srcset="
+                    ./images/jpeg/igor-270-min.jpg    270w,
+                    ./images/jpeg/igor-354-min.jpg    354w,
+                    ./images/jpeg/igor-450-min.jpg    450w,
+                    ./images/jpeg/igor-270@2x-min.jpg 540w,
+                    ./images/jpeg/igor-354@2x-min.jpg 708w,
+                    ./images/jpeg/igor-450@2x-min.jpg 900w
+                  "
+                  src="./images/jpeg/igor-270-min.jpg"
+                  alt="Игорь Демьяненко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
