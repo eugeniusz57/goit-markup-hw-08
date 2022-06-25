@@ -137,6 +137,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-header__container {
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -339,8 +340,10 @@ img {
   }
 }
 
-.contact__item:not(:last-child) {
-  margin-bottom: 10px;
+@media screen and (max-width: 767px) {
+  .contact__item:last-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -348,6 +351,10 @@ img {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -379,6 +386,7 @@ img {
 @media screen and (max-width: 767px) {
   .contact__link {
     font-size: 34px;
+    display: inline-block;
   }
 }
 
@@ -394,6 +402,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__link-small {
+    font-size: 24px;
   }
 }
 
@@ -1503,6 +1517,15 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 357px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
   }
 }
 
@@ -1515,15 +1538,39 @@ img {
   color: #2196f3;
 }
 
+.social__link:hover, .social__link:focus {
+  color: #188ce8;
+}
+
 .social__item {
   padding-right: 10px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social__item:not(:first-child) {
   padding-left: 10px;
 }
 
-.social__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.social__item:not(:last-child)::after {
+  content: ' ';
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .social__item:nth-child(3) {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 5px) / 2);
+        flex-basis: calc((100% - 4 * 5px) / 2);
+    margin: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
