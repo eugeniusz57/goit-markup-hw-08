@@ -35,13 +35,19 @@
         @media screen and (max-width: 767px) {
         margin-bottom: 10px;}
     }
+    &:first-child{
+        @media screen and (max-width: 767px) {
+        margin-bottom: 0px;}
+    }
     @media screen and (max-width: 767px) {
         
         padding-top: 16px;
         padding-bottom: 16px;
     }
     &:not(:last-child){
+        @media screen and (min-width: 767px) {
         margin-bottom: 10px;
+        }
     }
     
     @media screen and (min-width: 1200px) {
@@ -63,12 +69,13 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-size: 12px;
-    @media screen and (max-width: 767px) {
-    font-size: 34px;
-    display: inline-block;
 
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        display: inline-block;
     }
-     transition: color 250ms $cubik;
+
+    transition: color 250ms $cubik;
 
     &:hover, 
     &:focus{

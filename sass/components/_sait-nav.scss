@@ -34,28 +34,25 @@
 
     }
 
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    position: relative;
-
-    color: $h-color-text;
-   
-    line-height: 1.14;
     
-
-    transition: color 250ms $cubik;
-
-    
-    &:hover,
-    &:focus{
-        color: $btn-and-accent;
-    }
 }
 
 .site-nav__link--active {
     color: $btn-and-accent;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    color: $h-color-text;  
+    line-height: 1.14;   
+
+    transition: color 250ms $cubik;
+ 
+    &:hover,
+    &:focus{
+        color: $btn-and-accent;
+    }
+
     @media screen and (min-width: 768px) {
     &:after {
             content: '';
