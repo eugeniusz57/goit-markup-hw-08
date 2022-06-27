@@ -100,3 +100,9 @@
     
         }
 }
+
+.contact__link--mobile{
+    @media screen and (max-width: 767px) {
+    color: $btn-and-accent;
+    }
+}

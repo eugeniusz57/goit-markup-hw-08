@@ -6,11 +6,11 @@
 }
 
 .social-adres {
-    margin-top: 12px;
+   
     padding-top: 60px;
     padding-bottom: 60px;
     @media screen and (min-width: 768px) {
-padding: 0;
+        padding: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -25,11 +25,7 @@ padding: 0;
 
 .social-adres__label
 {
-    font-weight: 700;
-    color: $main-bg;
-    line-height: 1.13;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    @extend %footer-title;
 
 }
 

@@ -1,5 +1,4 @@
 .feateres__cart{
-    display: block;
     @extend %section;
     
     @media screen and (min-width: 768px) {
@@ -12,19 +11,23 @@
 
 
 .feateres__item {
-    @media screen and (min-width: 768px) {
-    
-    width: calc((100% - 4*15px) / 2);
-     margin: 15px;
+    &:not(:last-child){
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4*15px) / 2);
+         margin: 15px;
+    }
+    
     @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 4);
+        width: calc((100% - 8 * 15px) / 4);
 
     }
 }
 
 .feateres__icon {
-    display: block;
     width: 100%;
     padding: 25px 100px;
     margin-bottom: 30px;

@@ -1,48 +1,31 @@
 .site-nav {
+    @extend   %section;
     @media screen and (max-width: 767px) {
         flex-grow: 2;
         height: 514px;
     }
 
     @media screen and (min-width: 768px) {
-
-    list-style-type: none;
-    display: flex;
-    padding-left: 0px;
-    padding-right: 0px;}
-
-    
+        display: flex;
+    }  
 }
 
 .site-nav__item {
     display: flex;
-@media screen and (min-width: 768px) {
-    &:not(:first-child) {
-        margin-left: 50px;
+    @media screen and (min-width: 768px) {
+        &:not(:first-child) {
+            margin-left: 50px;
+        }
     }
-}
 }
 
 .site-nav__link {
+    position: relative;
+
     letter-spacing: 0.02em;
     font-weight: 500;
-    @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: 1.17;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    }
-
-    
-}
-
-.site-nav__link--active {
-    color: $btn-and-accent;
-    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    position: relative;
     color: $h-color-text;  
     line-height: 1.14;   
 
@@ -53,9 +36,20 @@
         color: $btn-and-accent;
     }
 
+    
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1.17;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }   
+}
+
+.site-nav__link--active {
+    color: $btn-and-accent;
     @media screen and (min-width: 768px) {
-    &:after {
-            content: '';
+        &:after {
+            content: ' ';
             position: absolute;
             bottom: -1px;
             left: 0;
