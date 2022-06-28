@@ -39,8 +39,11 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
+    
     text-transform: uppercase;
     color: $h-color-text;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
