@@ -58,4 +58,11 @@
             background: $btn-and-accent;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        &:after {
+            bottom: 0;
+            transform: translate(0%, 50%);
+        }
+        }
 }
